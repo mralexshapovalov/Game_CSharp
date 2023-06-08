@@ -70,8 +70,6 @@ namespace SnakeGame
 
             Position pos = empty[random.Next(empty.Count)];
             Grid[pos.Row,pos.Col] = GridValue.Food;
-
-
         }
 
         public Position HeadPosition()
