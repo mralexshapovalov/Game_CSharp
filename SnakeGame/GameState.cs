@@ -16,6 +16,8 @@ namespace SnakeGame
         public int Score { get; private set; }
         public bool GameOver { get;private set; }
 
+        private readonly LinkedList<Direction> directions = new LinkedList<Direction>();
+
         private readonly LinkedList<Position> snakePosition = new LinkedList<Position>();
         private readonly Random random = new Random();
 
@@ -97,9 +99,34 @@ namespace SnakeGame
             snakePosition.RemoveLast();
         }
 
+        private Direction GetLastDirection()
+        {
+            if(directions.Count==0)
+            {
+                return Dir;
+            }
+
+            return directions.Last.Value;
+        }
+
+        private bool CanChangeDirection(Direction newDir)
+        {
+            if(directions.Count==2)
+            {
+                return false;
+            }
+            Direction lastDir = GetLastDirection();
+            return newDir != lastDir && newDir != lastDir.Opposite();
+        }
+
+
         public void ChangeDirection(Direction dir)
         {
-            Dir = dir;
+
+            if (CanChangeDirection(dir))
+            {
+                directions.AddLast(dir);
+            }
         }
 
         private bool OutsideGrid(Position pos)
@@ -124,6 +151,12 @@ namespace SnakeGame
 
         public void Move ()
         {
+            if(directions.Count>0)
+            {
+                Dir = directions.First.Value;
+                directions.RemoveFirst();
+            }
+
             Position newHeadPos = HeadPosition().Translation(Dir);
             GridValue hit = WillHit(newHeadPos);
 

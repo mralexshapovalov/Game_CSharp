@@ -7,7 +7,7 @@ namespace SnakeGame
 {
     public  static class Images
     {
-        public readonly static ImageSource Empty = LoadImage("");
+        public readonly static ImageSource Empty = LoadImage("Empty.png");
         public readonly static ImageSource Body = LoadImage("body_horizontal.png");
         public readonly static ImageSource Head = LoadImage("head_up.png");
         public readonly static ImageSource Food = LoadImage("apple.png");
