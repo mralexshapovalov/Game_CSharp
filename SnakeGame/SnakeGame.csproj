@@ -8,6 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\DeadHead.png" />
+    <None Remove="Assets\Head.png" />
+    <None Remove="Assets\icon.ico" />
     <None Remove="Sprite\apple.png" />
     <None Remove="Sprite\body_bottomleft.png" />
     <None Remove="Sprite\body_bottomright.png" />
@@ -26,6 +29,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Sprite\DeadHead.png" />
     <Resource Include="Sprite\apple.png" />
     <Resource Include="Sprite\body_bottomleft.png" />
     <Resource Include="Sprite\body_bottomright.png" />
@@ -41,6 +45,10 @@
     <Resource Include="Sprite\tail_left.png" />
     <Resource Include="Sprite\tail_right.png" />
     <Resource Include="Sprite\tail_up.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\" />
   </ItemGroup>
 
 </Project>

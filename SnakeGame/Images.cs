@@ -9,9 +9,9 @@ namespace SnakeGame
     {
         public readonly static ImageSource Empty = LoadImage("Empty.png");
         public readonly static ImageSource Body = LoadImage("body_horizontal.png");
-        public readonly static ImageSource Head = LoadImage("head_up.png");
-        public readonly static ImageSource Food = LoadImage("apple.png");
-        public readonly static ImageSource DeadBody = LoadImage("");
+        public readonly static ImageSource Head = LoadImage("Head.png");
+        public readonly static ImageSource Food = LoadImage("Food.png");
+        public readonly static ImageSource DeadBody = LoadImage("DeadBody.png");
         public readonly static ImageSource DeadHead = LoadImage("");
 
         private static ImageSource LoadImage(string fillName)
