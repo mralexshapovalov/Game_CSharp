@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
 
 namespace SnakeGame
 {
-    public  class Image
+    public  static class Images
     {
         public readonly static ImageSource Empty = LoadImage("");
         public readonly static ImageSource Body = LoadImage("body_horizontal.png");

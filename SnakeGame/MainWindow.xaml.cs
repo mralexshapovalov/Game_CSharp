@@ -12,7 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using static System.Net.Mime.MediaTypeNames;
+
+
 
 namespace SnakeGame
 {
@@ -36,13 +37,13 @@ namespace SnakeGame
             GameGrid.Rows = rows;
             GameGrid.Columns = cols;
 
-            for (int r = 0; r < rows; r++)
+            //for (int r = 0; r < rows; r++)
             {
                 for (int c = 0; c < cols; c++)
                 {
                     Image image = new Image
                     {
-
+                        Source = Images.Empty
                     };
 
                     images[r, c] = image;
