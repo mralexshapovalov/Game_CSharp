@@ -8,47 +8,24 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Assets\DeadHead.png" />
-    <None Remove="Assets\Head.png" />
-    <None Remove="Assets\icon.ico" />
     <None Remove="Sprite\apple.png" />
-    <None Remove="Sprite\body_bottomleft.png" />
-    <None Remove="Sprite\body_bottomright.png" />
-    <None Remove="Sprite\body_horizontal.png" />
-    <None Remove="Sprite\body_topleft.png" />
-    <None Remove="Sprite\body_topright.png" />
-    <None Remove="Sprite\body_vertical.png" />
-    <None Remove="Sprite\head_down.png" />
-    <None Remove="Sprite\head_left.png" />
-    <None Remove="Sprite\head_right.png" />
-    <None Remove="Sprite\head_up.png" />
-    <None Remove="Sprite\tail_down.png" />
-    <None Remove="Sprite\tail_left.png" />
-    <None Remove="Sprite\tail_right.png" />
-    <None Remove="Sprite\tail_up.png" />
+    <None Remove="Sprite\Body.png" />
+    <None Remove="Sprite\DeadBody.png" />
+    <None Remove="Sprite\DroidSansMono.ttf" />
+    <None Remove="Sprite\Empty.png" />
+    <None Remove="Sprite\Food.png" />
+    <None Remove="Sprite\Head.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Sprite\Body.png" />
+    <Resource Include="Sprite\DeadBody.png" />
     <Resource Include="Sprite\DeadHead.png" />
     <Resource Include="Sprite\apple.png" />
-    <Resource Include="Sprite\body_bottomleft.png" />
-    <Resource Include="Sprite\body_bottomright.png" />
-    <Resource Include="Sprite\body_horizontal.png" />
-    <Resource Include="Sprite\body_topleft.png" />
-    <Resource Include="Sprite\body_topright.png" />
-    <Resource Include="Sprite\body_vertical.png" />
-    <Resource Include="Sprite\head_down.png" />
-    <Resource Include="Sprite\head_left.png" />
-    <Resource Include="Sprite\head_right.png" />
-    <Resource Include="Sprite\head_up.png" />
-    <Resource Include="Sprite\tail_down.png" />
-    <Resource Include="Sprite\tail_left.png" />
-    <Resource Include="Sprite\tail_right.png" />
-    <Resource Include="Sprite\tail_up.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Assets\" />
+    <Resource Include="Sprite\DroidSansMono.ttf" />
+    <Resource Include="Sprite\Empty.png" />
+    <Resource Include="Sprite\Food.png" />
+    <Resource Include="Sprite\Head.png" />
   </ItemGroup>
 
 </Project>
