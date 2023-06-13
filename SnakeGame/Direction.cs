@@ -28,7 +28,6 @@ namespace SnakeGame
             return new Direction(-RowOffSet, -ColOffSet);
         }
 
-
         public override bool Equals(object obj)
         {
             return obj is Direction direction &&
