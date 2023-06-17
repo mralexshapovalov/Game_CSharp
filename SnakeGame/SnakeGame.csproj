@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Sound\ukus-zvonkiy.wav" />
     <None Remove="Sprite\apple.png" />
     <None Remove="Sprite\Body.png" />
     <None Remove="Sprite\DeadBody.png" />
@@ -18,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Sound\ukus-zvonkiy.wav" />
     <Resource Include="Sprite\Body.png" />
     <Resource Include="Sprite\DeadBody.png" />
     <Resource Include="Sprite\DeadHead.png" />

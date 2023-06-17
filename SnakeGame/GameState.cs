@@ -20,6 +20,7 @@ namespace SnakeGame
         private readonly LinkedList<Direction> directions = new LinkedList<Direction>();
 
         private readonly LinkedList<Position> snakePosition = new LinkedList<Position>();
+       
         private readonly Random random = new Random();
 
         public GameState(int rows,int cols) 
@@ -120,7 +121,6 @@ namespace SnakeGame
             return newDir != lastDir && newDir != lastDir.Opposite();
         }
 
-
         public void ChangeDirection(Direction dir)
         {
 
@@ -150,6 +150,10 @@ namespace SnakeGame
             return Grid[newHeadPos.Row, newHeadPos.Col];
         }
 
+
+
+
+
         public void Move ()
         {
             if(directions.Count>0)
@@ -172,20 +176,17 @@ namespace SnakeGame
             }
             else if(hit==GridValue.Food)
             {
+
+                Sound sound = new Sound();
+                sound.SoundPlayerEat();
+
+
                 AddHead(newHeadPos);
                 Score++;
                 AddFood();
 
             }
         }
-
-
-
-
-
-
-
-
 
     }
 }

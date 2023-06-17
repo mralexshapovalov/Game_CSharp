@@ -13,7 +13,6 @@ namespace SnakeGame
         public readonly static Direction up = new Direction(-1, 0);
         public readonly static Direction down = new Direction(1, 0);
 
-
         public int RowOffSet { get; }
         public int ColOffSet { get; }
 

@@ -14,9 +14,8 @@ namespace SnakeGame
         public readonly static ImageSource DeadBody = LoadImage("DeadBody.png");
         public readonly static ImageSource DeadHead = LoadImage("DeadHead.png");
 
-        private static ImageSource LoadImage(string fillName)
-        {
-            return new BitmapImage(new Uri($"Sprite/{fillName}", UriKind.Relative));
-        }
+        private static ImageSource LoadImage(string fillName) => new BitmapImage(new Uri($"Sprite/{fillName}", UriKind.Relative)); 
+
+        //Здесь происходит загрузка спрайтов в проект
     }
 }
